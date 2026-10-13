@@ -1,0 +1,27 @@
+{
+  "name": "klisten-metermcp",
+  "version": "0.1.0",
+  "description": "Read your organization usage records. No payments or transfers. Customer API key required.",
+  "author": {
+    "name": "Klisten Inc",
+    "email": "klisteninc@gmail.com"
+  },
+  "homepage": "https://klisten.co.kr/customer-guide",
+  "license": "UNLICENSED",
+  "logo": "assets/icon.svg",
+  "mcpServers": "mcp.json",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "KLISTEN_API_KEY": {
+        "type": "string",
+        "title": "Your scoped Klisten API key",
+        "description": "Your own Klisten API key with meter:read. Never put a key in chat or source code."
+      }
+    },
+    "required": [
+      "KLISTEN_API_KEY"
+    ]
+  },
+  "repository": "https://github.com/daehoonkwon-hash/klisten-metermcp-cursor-plugin"
+}
